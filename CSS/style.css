@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    background-color:rgb(235, 235, 239);
+    background-position: center;
+    background-size: contain;
+    min-height: 200vh;
+}
+
+.menu {
+    position:static;
+    top: 0;
+    background-color:#1c1b38;
+    padding: 10px 200px 10px 200px;
+    color: #ffffff;
+    margin: 0 auto;
+    overflow: hidden;
+    font-style: inherit;
+    font-size: inherit;
+}
+
+.menu h3{
+    display: inline-block;
+    font-size: inherit;
+    font-family: inherit;
+}
+.menu a {
+    float: left;
+    color:#fff;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    flex-shrink: auto;
+}
+.menu a:hover, a:focus{
+    text-decoration: underline;
+}
+.menu-log {
+    right: auto;
+    float: right; /* Floats the login link to the right */
+}
+.menu-logo {
+    padding: auto;
+    font-size: 20px;
+    text-decoration: none;
+    left: auto;
+    float: left; /* Floats the login link to the right */
+}
+.Menu_movies{
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;  
+}
+.Menu_movies li{
+    display: inline;
+}
+
+.mainbody {
+    margin:20px 200px 20px 200px;
+    padding: 15px;
+    min-height: 100vh;
+    /* border:2px dotted #332f2f; */
+    border-radius: 10px;
+    background-color: white;
+    background-position: center;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(auto, auto);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas:
+        "a a a a a a a a"
+        "a a a a a a a a"
+        "lm lm lm lm lm lm lm lm"
+        "m m m m m m n n"
+        "m m m m m m n n" */
+        
+}
+
+.mainbody .letters {   
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5px;  
+    /* grid-area: a; */
+      
+}
+
+.mainbody .letters .box_l{
+    padding: 3px;
+    text-align: center;
+}
+
+.mainbody .letters .box_l a{
+    color: #000000;
+    border-radius: 6px;
+    background-color: rgba(69, 67, 77, 0.1 );
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+.mainbody .letters .box_l a:hover, a:focus{
+    color:white;
+    background-color: black;
+    text-decoration: underline;
+    cursor:pointer;
+    border-radius: 6px;
+    
+}
+
+.mainbody .Trending_Movies{
+    /* grid-area: a; */
+   
+}
+.mainbody .lm{
+    /* grid-area: lm; */
+    /* gap: none; */
+}
+.mainbody .body2{
+    column-count: 4;
+    /* column-width: 18.75%; */
+    column-gap: 2rem;
+    /* column-rule: 2px solid #1c1b38; */
+    /* grid-area: m; */
+}
+
+.mainbody .side_menu1{
+    background-color: rgb(122, 117, 145, 0.3);
+    width: 300px;
+    float: right;
+    backdrop-filter: blur(10px);
+    position:absolute;
+    border-radius: 7px;
+    align-self: left;
+    /* column-count: 1; */
+    /* column-width: 15%; */
+    /* grid-area: n;
+    gap:1rem; */
+     
+}
+
+.mainbody .side_menu2{
+    background-color: rgb(122, 117, 145, 0.3);
+    width: 300px;
+    float: right;
+    position:absolute;
+    right:0px;
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+/*     column-count: 1; */
+    /* column-width: 15%; */
+    /* grid-area: o;
+    gap:1rem; */
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    background-color:#1c1b38;
+    color: #fbfbfb;
+    position:fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:center ;
+    font-size: 15px;
+    font-weight: lighterweight;
+}
